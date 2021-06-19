@@ -3,10 +3,3 @@
 # for문
 # while문
 # 구구단 만들기
-
-student = []
-n = input('이름 : ')
-while n != '':
-    student.append({'name':n})
-
-print(student)
