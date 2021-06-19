@@ -51,3 +51,22 @@ class2.append({'name':'Joshua'}) #.append로 추가 가능. .add는 안된다.
 print(class2)
 class2.insert(0,{'name':'Max'}) #.insert로 순서를 정해서 추가 할 수 있다.
 print(class2)
+print()
+
+
+# items = "Hello World"
+
+# for item in items:
+#     print(items)
+#     print(item)
+
+
+# 함수
+def print3times(): #함수 이름에 공백,기호 불가능 # 1. 함수를 정의한다.(definition)
+    print("Hello")
+    print("Hello")
+    print("Hello")
+
+print3times() #함수이름으로 호출 # 2. 함수를 호출한다.(calling)
+print()
+
