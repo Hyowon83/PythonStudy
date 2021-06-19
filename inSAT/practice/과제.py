@@ -174,3 +174,19 @@ print("수학 점수의 총합: {}".format(scores[MATH_TOTAL]))
 print("영어 점수의 총합: {}".format(scores[ENG_TOTAL]))
 print("수학 점수의 평균: {}".format(scores[MATH_AVG]))
 print("영어 점수의 평균: {}".format(scores[ENG_AVG]))
+
+#3 함수로 표현하는 방법
+student = []
+def getPoint(x):
+    eng = input('영어점수: ')
+    mat = input('수학점수: ')
+    d = {'name':x,'영어점수: ':eng,'수학점수: ':mat}
+    return d #실행된 함수의 결과를 반환해서 사라지지 않게한다.
+
+while True:
+    name = input('이름: ')
+    if name == '':
+        break
+    student.append(getPoint(name)) #위에 정의된 함수 x자리에 name값을 넣는다. #return된 d값이 getPoint(name)에 들어간다.
+
+print(student)
