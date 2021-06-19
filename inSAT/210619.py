@@ -89,3 +89,4 @@ print()
 
 #math.sqrt(n) 루트n 이라는 뜻 (SQuare RooT)
 
+lst = [n for n in range(100) if n != 0 and 1 for ]
