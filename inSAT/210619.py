@@ -70,3 +70,22 @@ def print3times(): #함수 이름에 공백,기호 불가능 # 1. 함수를 정�
 print3times() #함수이름으로 호출 # 2. 함수를 호출한다.(calling)
 print()
 
+
+def plus(x, y):
+    return x + y
+
+def minus(x, y):
+    return x - y
+
+def devision(x, y):
+    return x / y
+
+def multiple(x, y):
+    return x * y
+
+print(plus(10, 20))
+print(multiple(10, 20))
+print()
+
+#math.sqrt(n) 루트n 이라는 뜻 (SQuare RooT)
+
