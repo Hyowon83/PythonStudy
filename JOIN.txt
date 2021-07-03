@@ -1,0 +1,26 @@
+[게시판]
+게시글 번호 / 게시글 제목
+1 새로운 게시글
+2 새로운 게시글2
+
+[댓글]
+댓글번호 / 댓글 내용 / 게시판 번호
+1(PK, 기본키, primary key) 댓글 남깁니다. 1 (FK 외래키, foreign key)
+2 / 댓글 남깁니다 2 / 1
+3 / 댓글 남깁니다 / 2
+
+1번 게시판에 쓴 댓글
+
+게시글 번호 게시글 제목
+SELECT TBL_BOARD.* FROM TBL_BOARD
+
+댓글번호, 댓글 내용
+SELECT TBL_REPLY.* FROMT TBL_REPLY
+
+게시글 번호 게시글 제목 댓글 번호 댓글 내용
+1 / 새로운 게시글/ 1 / 댓글 남깁니다.
+1 / 새로운 게시글/ 2 / 댓글 남깁니다.2
+2 / 새로운 게시글2/ 3/ 댓글 남깁니다
+ 
+SELECT B.게시판 번호, B.게시글 제목, R.댓글 번호, R.댓글 내용 
+FROM TBL_BOARD B INNER JOIN TBL_REPLY R ON B.BNO = R.BNO   
