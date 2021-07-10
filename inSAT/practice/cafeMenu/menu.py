@@ -67,8 +67,6 @@ class Menu:
 
     # # 박재형쌤 버전
     # def __init__(self):
-    #     self.menuList = []
-    #     self.priceList = []
     #     f = open("D:/tmp/menu.txt", "r")
     #     line = f.readline() # 위의 파일 한 줄씩 읽어들이기
     #     while line:
