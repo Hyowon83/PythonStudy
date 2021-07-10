@@ -62,7 +62,7 @@ class Menu:
                 for line in file:
                     (name, price) = line.strip().split(", ")
                     self.menuList.append(name)
-                    self.priceList.append(price)
+                    self.priceList.append(int(price))
             self.printList()
             
 
