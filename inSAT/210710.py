@@ -1,5 +1,5 @@
 ####7주차 마지막 수업(7/10)
-# 흐름 익히기
+# 상속 할 때의 흐름 익히기
 class Parent:
     def __init__(self):
         self.value = "테스트"
@@ -8,7 +8,7 @@ class Parent:
     def test(self):
         print("Parent 클래스의 test 호출")
 
-class Child(Parent):
+class Child(Parent):# Parent 클래스를 상속한다.
     def __init__(self):
         Parent.__init__(self) # 2. Parent 클래스의 __init__ 실행
         print("Child 클래스의 __init__ 호출") # 4. Child 클래스의 __init__ 실행
