@@ -60,8 +60,6 @@ class Menu:
                 (name, price) = line.strip().split(", ")
                 self.menuList.append(name)
                 self.priceList.append(price)
-                if name  == "":
-                    break
         self.printList()
 
     def addMenu(self, name, price):
