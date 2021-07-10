@@ -27,7 +27,7 @@ cafe = menu.Menu()
 
 name = input("메뉴명 : ")
 while name != "":
-    price = input("가격 : ")
+    price = int(input("가격 : "))
     cafe.addMenu(name,price)
     name = input("메뉴명 : ")
 
