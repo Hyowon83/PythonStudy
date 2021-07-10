@@ -51,16 +51,20 @@
 
 
 #### 저장된 파일 읽어서 추가하기
+import os
+
 class Menu:
     def __init__(self):
         self.menuList = []
         self.priceList = []
-        with open("D:/tmp/menu.txt", "r") as file:   
-            for line in file:
-                (name, price) = line.strip().split(", ")
-                self.menuList.append(name)
-                self.priceList.append(price)
-        self.printList()
+        if os.path.isfile("d:/tmp/menu.txt"):
+            with open("D:/tmp/menu.txt", "r") as file:   
+                for line in file:
+                    (name, price) = line.strip().split(", ")
+                    self.menuList.append(name)
+                    self.priceList.append(price)
+            self.printList()
+            
 
     def addMenu(self, name, price):
         self.menuList.append(name)
