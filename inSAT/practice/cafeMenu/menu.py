@@ -64,7 +64,19 @@ class Menu:
                     self.menuList.append(name)
                     self.priceList.append(int(price))
             self.printList()
-            
+
+    # # 박재형쌤 버전
+    # def __init__(self):
+    #     self.menuList = []
+    #     self.priceList = []
+    #     f = open("D:/tmp/menu.txt", "r")
+    #     line = f.readline() # 위의 파일 한 줄씩 읽어들이기
+    #     while line:
+    #         name, price = line.split(", ") # 튜플방식으로 자르기
+    #         #lst = line.split(", ") # 리스트식으로 자르기(후에 가공 필요)
+    #         self.addMenu(name, price)
+    #         line = f.readline()
+    #     self.printList()
 
     def addMenu(self, name, price):
         self.menuList.append(name)
