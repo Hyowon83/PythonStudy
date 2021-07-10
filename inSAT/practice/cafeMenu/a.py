@@ -20,7 +20,7 @@
 
 
 
-#### 박재형 선생님
+#### 파일 저장까지.
 import menu
 
 cafe = menu.Menu()
